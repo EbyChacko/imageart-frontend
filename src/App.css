@@ -41,12 +41,16 @@ p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+a {
+  color: #000 !important;
 }
 
 a:hover {
   text-decoration: none;
-  color:#88ffc8 !important;
+  color:#7b0075 !important;
 }
 
 img {
@@ -85,6 +89,18 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+@media (max-width:992px) {
+  nav.navbar {
+    background-color: #11181cfa;
+  }
+}
+
+@media (min-width:420px) {
+  .container{
+    max-width: 94% !important;
+  }
+}
+
 
 p.success {
 	color: rgb(68, 255, 68);
@@ -117,7 +133,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #11181cdb;
+  background-color: #11181cfa;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -268,5 +284,67 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height:auto;
 }
 .banner{
-  padding-top:180px;
+  padding:180px 0 100px;
+}
+
+
+/* Footer CSS */
+
+.footer {
+  border-radius: 50px 50px 0 0;
+  background-color: aliceblue;
+  color:#100D08;
+  Padding:50px 0 25px;
+}
+
+
+.footer_logo_div {
+  padding-right:80px;
+}
+
+.footer_logo {
+  max-width:200px;
+  padding-bottom:20px;
+}
+
+.footer h4 {
+  color:#00783c
+}
+
+.social-icon {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.social-icon a {
+  width: 60px;
+  height: 60px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(0, 108, 102, 0.5);
+}
+.social-icon a::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+.social-icon a img {
+width: 40%;
+z-index: 1;
+transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }

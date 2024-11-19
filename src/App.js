@@ -1,5 +1,6 @@
 import './App.css';
 import { Banner } from './components/Banner';
+import { Footer } from './components/Footer';
 import { NavigationBar } from './components/NavigationBar';
 
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
         <NavigationBar />
         <Banner />
+        <Footer />
     </div>
   );
 }

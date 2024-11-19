@@ -1,11 +1,7 @@
 import { Container, Row, Col} from "react-bootstrap";
-import { useState, UseEfeect } from "react";
-import printer from "../assets/Images/printer.webp"
 import quote from "../assets/Images/quote.webp"
 
 export const Banner = () => {
-
-
     return (
         <section className="banner" id="home">
             <Container>
@@ -13,14 +9,22 @@ export const Banner = () => {
                     <Col xs={12}  lg={5} className="d-flex justify-content-center align-items-center">
                         <img src={quote} className="home_img" alt="printer" />
                     </Col>
-                    <Col xs={12} lg={6} className="d-flex justify-content-center align-items-center">
+                    <Col xs={12} lg={7} className="d-flex justify-content-center align-items-center">
                     <div >
                         <div className="banner_para">
-                            <h2>Welcome to Image Art – The Printing Expert.</h2>
+                            <h1>Printing Your Vision, Perfectly Delivered!</h1>
                             <br></br>
-                            <p>For over 20 years, we have proudly served as the premier destination for flex printing, vinyl printing, laser etching, custom mug printing, and a wide range of innovative printing solutions in Kothamangalam, the gateway to the high ranges. Whether you’re looking for vibrant banners, eye-catching signage, or personalized gifts, our expertise ensures every project exceeds expectations.</p>
-                            <p>Our journey is strengthened by our sister concerns—Colour Dots, Image Digital, and Tiso Tech—who share our commitment to quality and creativity. Together, we deliver unmatched printing services tailored to your needs.</p>
-                            <p>Step into our shop and experience cutting-edge printing technology combined with decades of craftsmanship. At Image Art, your ideas come to life with precision and flair, ensuring your brand or personal project makes a lasting impression.</p>
+                            <p>Welcome to <strong>Image Art</strong>, your trusted partner in digital printing solutions since 1999. Based in the vibrant city of Kothamangalam, Kerala, we've been perfecting the art of designing and printing for over 25 years.</p>
+                            <p>With a rich history and a passion for innovation, we've established ourselves as a leader in the digital printing industry. Our state-of-the-art facilities and cutting-edge technology enable us to deliver top-notch prints that exceed our clients' expectations.
+                            At Signtek, we're dedicated to providing exceptional quality, timely delivery, and personalised service. Our team of experts is always ready to guide you through the printing process, ensuring that your vision becomes a stunning reality.</p>
+                            <p>From vibrant signage to intricate designs, we've printed it all. Trust Image Art to bring your ideas to life with our:</p>
+                            <ul>
+                                <li>High-quality digital printing services</li>
+                                <li>Expert design and production team</li>
+                                <li>Quick turnaround times</li>
+                                <li>Competitive pricing</li>
+                            </ul>
+                            <p>As we continue to grow and evolve, we remain committed to our core values of quality, innovation, and customer satisfaction. Partner with us to experience the Image Art difference.</p>
                             <p style={{ color: "#f9cb00" }} > Visit us today and let us elevate your printing experience!</p>
                         </div>
                     </div>
