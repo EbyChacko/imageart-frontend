@@ -17,7 +17,7 @@ export const Footer = () => {
                                     <p>At ImageArt, we combine cutting-edge technology with unmatched craftsmanship to make your brand stand out. Explore our tailored solutions for businesses and individuals to elevate your advertising game.</p>
                                 </div>
                             </Col>
-                            <Col xs={12} lg={8}>
+                            <Col xs={12} lg={8} className="footer_sections">
                                 <Row>
                                     <Col xs={12} lg={6} className="py-3" >
                                         <div >

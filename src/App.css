@@ -144,51 +144,36 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  height: 2px;
+  background-color: #ffff00;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover::after {
+  width: 80%;
+  left: 10%;
+}
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: #ffff00 !important;
+
 }
 span.navbar-text {
     display: flex;
     align-items: center;
 }
-.social-icon {
-    display: inline-block;
-    margin-bottom: 14px;
-}
-.social-icon a {
-    width: 60px;
-    height: 60px;
-    background: rgba(217, 217, 217, 0.1);
-    display: inline-flex;
-    border-radius: 50%;
-    margin-right: 6px;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.social-icon a::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-color: #e7e709;
-    border-radius: 50%;
-    transform: scale(0);
-	transition: 0.3s ease-in-out;
-}
-.social-icon a:hover::before {
-    transform: scale(1);
-}
-.social-icon a img {
-	width: 40%;
-	z-index: 1;
-	transition: 0.3s ease-in-out;
-}
-.social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
-}
+
 .navbar-text button {
   font-weight: 700;
   color: #000000;
@@ -247,7 +232,7 @@ nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
-	height: 2px;
+	height: 1px;
 	background-color: #fff;
 	top: 0;
 	left: 0;
@@ -283,7 +268,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 400px;
   height:auto;
 }
-.banner{
+.banner, .AboutUs{
   padding:180px 0 100px;
 }
 
@@ -347,4 +332,22 @@ transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+
+
+/* Not Found Page */
+
+.not-found {
+  padding:200px;
+}
+
+.back-home-btn {
+  background-color: #fff200;
+  padding:10px 20px;
+  border-radius: 40px;
+}
+
+.back-home-btn:hover {
+  background-color: #d9f811;
 }
